@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: 'taskdock',
   description: 'Task and schedule management app',
   manifest: '/manifest.json',
+  icons: {
+    icon: '/icon.svg',
+    apple: '/icon.svg',
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
