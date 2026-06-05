@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  --bg: #F7F6F3;
+  --bg-card: #FFFFFF;
+  --bg-secondary: #EFEEEB;
+  --text: #37352F;
+  --text-secondary: #9B9A97;
+  --text-muted: #C4C4C0;
+  --border: #E9E9E7;
+  --border-strong: #D3D3CF;
+  --hover: #F1F1EF;
+  --active: #EBEBEB;
+  --accent: #37352F;
+
+  --priority-high: #E03E3E;
+  --priority-medium: #D9730D;
+  --priority-low: #6E5ED2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-inter);
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.5;
+  scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D3D3CF; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #A8A8A4; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+::placeholder {
+  color: var(--text-muted);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0.4;
+  cursor: pointer;
+}
